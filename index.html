@@ -1,25 +1,98 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>CCN206 Chatbot Prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coco - QUT Activity Guide</title>
+
+```
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f7fa;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .avatar {
+        width: 220px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        color: #666;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        color: #555;
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .footer {
+        margin-top: 25px;
+        font-size: 14px;
+        color: #888;
+    }
+</style>
+```
+
 </head>
 
 <body>
-    <h1>CCN206 Chatbot Prototype</h1>
 
-    <p>
-        This chatbot was developed using Dialogflow ES for CCN206 Assignment 2.
-    </p>
+```
+<div class="container">
 
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <img src="Coco.png" alt="Coco Avatar" class="avatar">
 
-    <df-messenger
-      intent="WELCOME"
-      chat-title="CCN206-A2"
-      agent-id="96df9a39-daef-4d0f-8f24-c055c3066396"
-      language-code="en">
-    </df-messenger>
+    <h1>Coco</h1>
+
+    <div class="subtitle">
+        Your QUT Activity Guide
+    </div>
+
+    <div class="description">
+        Welcome to Coco! I can help you discover QUT and community activities,
+        explore event details, and find opportunities that match your interests.
+        Click the chat icon in the bottom-right corner to start chatting.
+    </div>
+
+    <div class="footer">
+        CCN206 Assignment 2 – Dialogflow Chatbot Prototype
+    </div>
+
+</div>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+<df-messenger
+    intent="WELCOME"
+    chat-title="Coco"
+    agent-id="96df9a39-daef-4d0f-8f24-c055c3066396"
+    language-code="en">
+</df-messenger>
+```
 
 </body>
+
 </html>
